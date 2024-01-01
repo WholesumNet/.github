@@ -12,3 +12,5 @@ The network is composed of several items distributed across the following repos:
 - [warrant](https://github.com/WholesumNet/warrant): a tiny code used by `verifiers` to confirm if some computation was done honestly.
 - [comms](https://github.com/WholesumNet/comms): a communications library based on libp2p that enables nodes to talk by implementing the core protocol of Wholesum.
 - [dstorage](https://github.com/WholesumNet/dstorage): a FairOS-dfs client used by nodes to store data on Swarm.
+- [jocker](https://github.com/WholesumNet/jocker): a tiny wrapper around Bollard(docker interface).
+  
