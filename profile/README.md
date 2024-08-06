@@ -8,9 +8,7 @@ Stroage is handled in a decentralized way. Recall that passing around heavy obje
 The network is composed of several items distributed across the following repos:
 - [client](https://github.com/WholesumNet/client): a client asks the network to get the compute job done on her behalf and expects proof of honest execution.
 - [server](https://github.com/WholesumNet/server): a server gets the compute job done along with proofs of honest execution.
-- [verifier](https://github.com/WholesumNet/verifier): a verifier gurantees that a compute job was done in an honest manner.
-- [warrant](https://github.com/WholesumNet/warrant): a tiny code used by `verifiers` to confirm if some computation was done honestly.
 - [comms](https://github.com/WholesumNet/comms): a communications library based on libp2p that enables nodes to talk by implementing the core protocol of Wholesum.
-- [dstorage](https://github.com/WholesumNet/dstorage): a FairOS-dfs client used by nodes to store data on Swarm.
+- [dstorage](https://github.com/WholesumNet/dstorage): a decentralized stroage library with support for Swarm and Filecoin(through Lighthouse) that is used by nodes to store data.
 - [jocker](https://github.com/WholesumNet/jocker): a tiny wrapper around Bollard(docker interface).
   
