@@ -3,7 +3,7 @@
 
 Honest execution is achieved by transforming and running ordinary code inside Risc0 host-guest environment. The actual computation happens inside a docker container equipped with Risc0 runtime environment. An execution session wishing to be deemed verified, should provide proofs of honest execution called `receipt` is Risc0 jargon. 
 
-Stroage is handled in a decentralized way. Recall that passing around heavy objects(anything > 1mb) is not feasible in p2p settings. So, FairOS-dfs(which builds on top of Swarm) comes to rescue by handling storage inside pods(a filesystem structure). This reduces the need for passing around heavy objects to just passing their CIDs.
+Stroage is handled in a decentralized way. Recall that exchanging heavy objects(anything > 1mb) is not feasible in p2p settings, so decentralized storage comes to rescue by storing once and passing CIDs around.
 
 The network is composed of several items distributed across the following repos:
 - [client](https://github.com/WholesumNet/client): a client asks the network to get the compute job done on her behalf and expects proof of honest execution.
