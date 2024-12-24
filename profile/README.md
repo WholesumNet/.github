@@ -8,11 +8,12 @@ Stroage is handled in a decentralized way. Recall that exchanging heavy objects(
 
 The network is composed of several items distributed across the following repos:
 
-- [client](https://github.com/WholesumNet/client): a client asks the network to get the compute job done on her behalf and expects proof of honest execution.
-- [server](https://github.com/WholesumNet/server): a server gets the compute job done along with proofs of honest execution.
-- [comms](https://github.com/WholesumNet/comms): a communications library based on libp2p that enables nodes to talk by implementing the core protocol of Wholesum.
-- [dstorage](https://github.com/WholesumNet/dstorage): a decentralized stroage library with support for Swarm and Filecoin(through Lighthouse) that is used by nodes to store data.
-- [jocker](https://github.com/WholesumNet/jocker): a tiny wrapper around Bollard(docker interface).
+- [client](https://github.com/WholesumNet/client): Clients demand proving.
+- [prover](https://github.com/WholesumNet/prover): Provers fulfill prove, join, snark, ... jobs.
+- [comms](https://github.com/WholesumNet/comms): Communications library based on libp2p to enables nodes exchnage messages.
+- [dstorage](https://github.com/WholesumNet/dstorage): Wrapper around Swarm and Filecoin(through Lighthouse) to store data in a decentralized fashion. CIDs fly around.
+- [segmentor](https://github.com/WholesumNet/segmentor): Risc0 utility to segment guest ELFs.
+- [jocker](https://github.com/WholesumNet/jocker): Tiny wrapper around Bollard(a docker interface).
 
 Here's a rough sketch of the pipeline being developed for parallel proving:
 ![Parallel proving scheme](https://github.com/WholesumNet/docs/blob/main/images/pipeline.png)
