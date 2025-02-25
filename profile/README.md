@@ -12,8 +12,6 @@ The network is composed of several items distributed across the following repos:
 - [prover](https://github.com/WholesumNet/prover): Provers fulfill prove, join, snark, ... jobs.
 - [comms](https://github.com/WholesumNet/comms): Communications library based on libp2p to enables nodes exchnage messages.
 - [dstorage](https://github.com/WholesumNet/dstorage): Wrapper around Swarm and Filecoin(through Lighthouse) to store data in a decentralized fashion. CIDs fly around.
-- [segmentor](https://github.com/WholesumNet/segmentor): Risc0 utility to segment guest ELFs.
-- [jocker](https://github.com/WholesumNet/jocker): Tiny wrapper around Bollard(a docker interface).
 
 Here's a rough sketch of the pipeline being developed for parallel proving:
 ![Parallel proving scheme](https://github.com/WholesumNet/docs/blob/main/images/pipeline.png)
