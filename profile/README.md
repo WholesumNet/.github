@@ -6,4 +6,4 @@ The network is composed of the following repos:
 
 - [client](https://github.com/WholesumNet/client): Clients demand proving.
 - [prover](https://github.com/WholesumNet/prover): Provers fulfill prove, join, snark, ... jobs.
-- [comms](https://github.com/WholesumNet/comms): Communications library based on libp2p to enables nodes exchnage messages.
+- [peyk](https://github.com/WholesumNet/peyk): Core protocol messaging laer and communications library.
